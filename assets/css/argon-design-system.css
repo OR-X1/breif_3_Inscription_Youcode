@@ -20390,10 +20390,15 @@ textarea[resize="horizontal"] {
   margin-bottom: 0;
 }
 
-.section {
+/* .section {
   position: relative;
   padding-top: 4rem;
   padding-bottom: 4rem;
+} */
+.section {
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 14.5%;
 }
 
 .section-xl {
