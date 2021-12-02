@@ -1,5 +1,20 @@
 {
   "Users": [
-   
+    {
+      "LastName": "othmane",
+      "FirstName": "rhazlani",
+      "dateN": "2021-12-08",
+      "CIN": "hh123",
+      "email": "oghazlani0@gmail.com",
+      "id": 1
+    },
+    {
+      "LastName": "imane",
+      "FirstName": "r",
+      "dateN": "2021-12-08",
+      "CIN": "hh123",
+      "email": "imane@gmail.com",
+      "id": 2
+    }
   ]
 }
