@@ -105,13 +105,13 @@
                 <div class="text-center text-muted mb-4">
                   <small>Or sign up with credentials</small>
                 </div>
-                <form role="form">
+                <form role="form"  id="registerForm">
                   <div class="form-group">
                     <div class="input-group input-group-alternative mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                       </div>
-                      <input class="form-control" placeholder="Name" type="text">
+                      <input class="form-control" placeholder="Name" type="text" id="fname">
                     </div>
                   </div>
                   <div class="form-group">
@@ -119,7 +119,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
                       </div>
-                      <input class="form-control" placeholder="Last name" type="text">
+                      <input class="form-control" placeholder="Last name" type="text" id="lname">
                     </div>
                   </div>
                   <div class="form-group">
@@ -127,7 +127,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
                       </div>
-                      <input class="form-control" type="date">
+                      <input class="form-control" type="date" id="daten">
                     </div>
                   </div>
                   <div class="form-group">
@@ -135,7 +135,7 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-credit-card"></i></span>
                       </div>
-                      <input class="form-control" placeholder="CIN" type="text">
+                      <input class="form-control" placeholder="CIN" type="text" id="cin">
                     </div>
                   </div>
                   <div class="form-group">
@@ -143,13 +143,14 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                       </div>
-                      <input class="form-control" placeholder="Email" type="email">
+                      <input class="form-control" placeholder="Email" type="email" id="email">
                     </div>
                   </div>
                   <!-- <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div> -->
                   
                   <div class="text-center">
-                    <button type="button" class="btn btn-primary mt-4">Create account</button>
+                    <button type="submit" class="btn btn-primary mt-4">Create account</button>
+                    <input type="submit" class="btn btn-primary mt-4" value="subb">
                   </div>
                 </form>
               </div>
@@ -231,6 +232,7 @@
         application: "argon-design-system-pro"
       });
   </script>
+  <script src="../authentification.js"></script>
 </body>
 
 </html>
