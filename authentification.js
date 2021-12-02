@@ -51,3 +51,6 @@ registerForm.addEventListener('submit', function(event) {
 
     oneUser.register();
 })
+
+
+var mok;
