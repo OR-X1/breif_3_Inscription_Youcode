@@ -13,10 +13,9 @@ loginForm.addEventListener('submit', function(event) {
     loginPassword = document.getElementById('loginPassword').value;
 
 
-    console.log(loginEmail);
     
     let oneUser = new User();
 
     oneUser.login(loginEmail,loginPassword);
-    
+
 });

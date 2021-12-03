@@ -20,8 +20,6 @@ export default class User {
 
     register(fname,lname,dateN,cin,email,refLogin,password){
 
-        
-
         let user = {
             "LastName": fname, 
             "FirstName": lname,
@@ -31,7 +29,6 @@ export default class User {
             "refLogin": refLogin,
             "password": password
             }
-            console.log(user);
 
         fetch('http://localhost:5000/Users', {
         method: 'POST',
@@ -62,27 +59,29 @@ export default class User {
 
             fetch('http://localhost:5000/Users')
                 .then(function(response) {
-            // response.json() returns a promise, use the same .then syntax to work with the results
-                    response.json().then(function(users){
-                        // users is now our actual variable parsed from the json, so we can use it
-                        users.forEach(function(user){
-                        // console.log(user.LastName)
+                   
 
-                        if(loginEmail == user.LastName){
-                                console.log('login');
-                        }else{
-                            console.log('noooo');
+                    response.json().then(function(users){
+                        users.forEach(function(user){
+                            if(loginEmail === user.refLogin && loginPassword === user.password){
+                            console.log(user.refLogin);
+                                localStorage.setItem('login', user.refLogin);
+                                console.log(sessionStorage.getItem('login'));
+                                // location.replace("http://localhost:3000/test/test.html");
+                                
                         }
+                        // else{
+                        //     console.log('noooo');
+                        //     location.replace("http://localhost:3000/auth/login.html");
+                        //     alert('email orpassword not correct !!!');
+                        // }
 
                         });
                     });
             }).catch(err => console.error(err));
 
 
-
-     
-
     }
-
-
 }
+
+// document.getElementById('nameId').innerHTML = sessionStorage.getItem('login');

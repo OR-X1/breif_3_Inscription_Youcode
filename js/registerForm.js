@@ -35,5 +35,5 @@ registerForm.addEventListener('submit', function(event) {
 
     oneUser.register(firstname,lastname,datenaissance,cin,email,refLogin,password);
     
-    // location.replace("http://localhost:3000/auth/login.html")
+    location.replace("http://localhost:3000/auth/login.html")
 });
