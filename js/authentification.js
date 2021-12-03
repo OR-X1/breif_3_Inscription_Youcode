@@ -39,35 +39,18 @@ export default class User {
     }
 
     login(loginEmail,loginPassword){
-        // fetch('http://localhost:5000/Users', {
-        //     method: 'GET'
-        // }).then(
-        //         response => response.json()
-        //     ).then(result => {
-        //         console.log(result);
-        //         // sessionStorage.setItem("idUser", result[0]);
-        //         // sessionStorage.setItem("idRole", result[1]);
-                
-        //         // if (sessionStorage.getItem('idRole') == 2) {
-        //         //     document.location.href = "../view/espaceClient.html"
-        //         // } else if (sessionStorage.getItem('idRole') == 3) {
-        //         //     document.location.href = "../view/profile.html"
-                    
-        //         // }
-        //     })
-
 
             fetch('http://localhost:5000/Users')
                 .then(function(response) {
-                   
 
                     response.json().then(function(users){
                         users.forEach(function(user){
                             if(loginEmail === user.refLogin && loginPassword === user.password){
                             console.log(user.refLogin);
-                                localStorage.setItem('login', user.refLogin);
+                                sessionStorage.setItem('login', user.refLogin);
+
                                 console.log(sessionStorage.getItem('login'));
-                                // location.replace("http://localhost:3000/test/test.html");
+                                location.replace("http://localhost:3000/test/test.html");
                                 
                         }
                         // else{
@@ -80,8 +63,32 @@ export default class User {
                     });
             }).catch(err => console.error(err));
 
-
     }
-}
 
-// document.getElementById('nameId').innerHTML = sessionStorage.getItem('login');
+    loginAdmin(loginAdminEmail,loginAdminPassword){
+
+        fetch('http://localhost:5000/Admin')
+            .then(function(response) {
+
+                response.json().then(function(users){
+                    users.forEach(function(user){
+                        if(loginAdminEmail === user.email && loginAdminPassword === user.password){
+                        console.log(user.email);
+                            sessionStorage.setItem('admin', user.email);
+
+                            console.log(sessionStorage.getItem('login'));
+                            location.replace("http://localhost:3000/index.html");
+                            
+                    }
+                    // else{
+                    //     console.log('noooo');
+                    //     location.replace("http://localhost:3000/auth/login.html");
+                    //     alert('email orpassword not correct !!!');
+                    // }
+
+                    });
+                });
+        }).catch(err => console.error(err));
+
+}
+}
