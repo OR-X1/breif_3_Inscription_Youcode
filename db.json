@@ -3,74 +3,22 @@
     {
       "LastName": "othmane",
       "FirstName": "rhazlani",
-      "dateN": "2021-12-09",
-      "CIN": "hh123",
+      "dateN": "2021-12-27",
+      "CIN": "HH222",
       "email": "oghazlani0@gmail.com",
-      "refLogin": "orhh123",
-      "id": 1
-    },
-    {
-      "LastName": "othmane",
-      "FirstName": "rhazlani",
-      "dateN": "2021-12-02",
-      "CIN": "hh123",
-      "email": "oghazlani0@gmail.com",
-      "refLogin": "orhh123 30",
+      "refLogin": "orHH2223666",
+      "password": "2irnk",
       "id": 2
     },
     {
-      "LastName": "othmane",
+      "LastName": "hii",
       "FirstName": "rhazlani",
-      "dateN": "2021-12-02",
-      "CIN": "hh123",
+      "dateN": "2021-12-27",
+      "CIN": "HH222",
       "email": "oghazlani0@gmail.com",
-      "refLogin": "orhh12340",
-      "id": 3
-    },
-    {
-      "LastName": "othmane",
-      "FirstName": "rhazlani",
-      "dateN": "2021-12-02",
-      "CIN": "hh123",
-      "email": "oghazlani0@gmail.com",
-      "refLogin": "orhh12310",
-      "id": 4
-    },
-    {
-      "LastName": "",
-      "FirstName": "",
-      "dateN": "",
-      "CIN": "",
-      "email": "",
-      "refLogin": "823",
-      "id": 5
-    },
-    {
-      "LastName": "",
-      "FirstName": "",
-      "dateN": "",
-      "CIN": "",
-      "email": "",
-      "refLogin": "865",
-      "id": 6
-    },
-    {
-      "LastName": "",
-      "FirstName": "",
-      "dateN": "",
-      "CIN": "",
-      "email": "",
-      "refLogin": "2471",
-      "id": 7
-    },
-    {
-      "LastName": "",
-      "FirstName": "",
-      "dateN": "",
-      "CIN": "",
-      "email": "",
-      "refLogin": "5716",
-      "id": 8
+      "refLogin": "orHH2223666",
+      "password": "2irnk",
+      "id": 2
     }
   ]
 }
