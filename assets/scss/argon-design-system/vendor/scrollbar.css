@@ -1,0 +1,34 @@
+.scrollbar-inner {
+  height: 100%;
+}
+
+.scrollbar-inner:not(:hover) .scroll-element {
+  opacity: 0;
+}
+
+.scrollbar-inner .scroll-element {
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  margin-right: 2px;
+}
+
+.scrollbar-inner .scroll-element .scroll-bar,
+.scrollbar-inner .scroll-element .scroll-element_track {
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.scrollbar-inner .scroll-element .scroll-element_track {
+  background-color: transparent;
+}
+
+.scrollbar-inner .scroll-element.scroll-y {
+  width: 3px;
+  right: 0;
+}
+
+.scrollbar-inner .scroll-element.scroll-x {
+  height: 3px;
+  bottom: 0;
+}
+/*# sourceMappingURL=scrollbar.css.map */

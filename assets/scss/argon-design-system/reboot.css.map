@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,CAAC;CACZ;;AAED,AAAA,UAAU;AACV,MAAM;AACN,IAAI,CAAC;EACD,OAAO,EAAE,KAAK;CACjB;;AAED,AAAA,IAAI,CAAC;EACD,QAAQ,EAAE,MAAM;CACnB",
+    "sources": [
+        "reboot.scss"
+    ],
+    "names": [],
+    "file": "reboot.css"
+}

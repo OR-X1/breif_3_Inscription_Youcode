@@ -20,6 +20,8 @@
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link href="../assets/css/argon-design-system.css?v=1.2.2" rel="stylesheet" />
+
+
 </head>
 
 <body class="login-page">
@@ -79,6 +81,13 @@
     </div>
   </nav>
   <!-- End Navbar -->
+
+  
+
+  
+<body>
+
+
   <section class="section section-shaped section-lg">
     <div class="shape shape-style-1 bg-gradient-default">
       <span></span>
@@ -94,8 +103,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="card bg-secondary shadow border-0">
-            <div class="card-body px-lg-5 py-lg-5">
-              <form role="form">
+            <div class="card-body px-lg-5 py-lg-5" id="quiz">
+              <!-- <form role="form"> -->
 
                 <div class="progress-wrapper pt-0">
                     <div class="progress-info">
@@ -104,50 +113,58 @@
                         <h2 class="text-center">Test online</h2>
                       </div>
                       <div class="progress-percentage">
-                        <span>25%</span>
+                        <span id="scoreNumber">0%</span>
                       </div>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar bg-default" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                      <div class="progress-bar bg-default" id="chartScor" role="progressbar"aria-valuemin="0" aria-valuemax="100" ></div>
                     </div>
                   </div>
 
+                   <!-- question -->
                 <div class="text-muted mb-4">
-                    <p>Inside which HTML element do we put the JavaScript?</p>
+                    <h3 id="question">Inside which HTML element do we put the JavaScript?</h3>
                   </div>
+
+                  <!-- score -->
+                  <h3 id="score"></h3>
                   
-                  <div>
-                    <div class="custom-control custom-radio mb-3">
-                        <input name="custom-radio-1" class="custom-control-input" id="customRadio1" checked="" type="radio">
-                        <label class="custom-control-label " for="customRadio1">
-                          <small>Checked</small>
-                        </label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="custom-radio-1" class="custom-control-input" id="customRadio2" checked="" type="radio">
-                        <label class="custom-control-label" for="customRadio2">
-                          <small>Checked</small>
-                        </label>
-                      </div>
-                      <div class="custom-control custom-radio mb-3">
-                        <input name="custom-radio-1" class="custom-control-input" id="customRadio3" checked="" type="radio">
-                        <label class="custom-control-label" for="customRadio3">
-                          <small>Checked</small>
-                        </label>
-                      </div>
+                  <div class="choices">
+                    <div class="row my-3 justify-content-center">
+                      <button id="guess0" class="btn btn-primary col-5 mx-2">        
+                        <p id="choice0" class="m-0"></p>
+                      </button>
+              
+                      <button id="guess1" class="btn btn-primary col-5 mx-2">
+                        <p id="choice1" class="m-0"></p>
+                      </button>
+                    </div>
+                      
+                    <div class="row my-3 justify-content-center">
+                      <button id="guess2" class="btn btn-primary col-5 mx-2">
+                        <p id="choice2" class="m-0"></p>
+                      </button>
+                        
+                      <button id="guess3" class="btn btn-primary col-5 mx-2">
+                        <p id="choice3" class="m-0"></p>
+                      </button>
+                    </div>
                   </div>
 
+                  <p id="progress"></p>
 
-                <div class="float-right">
-                  <button type="button" class="btn btn-dark mt-4">Next</button>
-                </div>
-              </form>
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+   
+</body>
+
+
+
 
 
   <footer class="footer">
@@ -189,10 +206,13 @@
       </div>
     </div>
   </footer>
+  
 
   <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+
+  <script src="./test.js"></script>
 
   <script>
 

@@ -48,10 +48,11 @@ export default class User {
                             if(loginEmail === user.refLogin && loginPassword === user.password){
                             console.log(user.refLogin);
                                 sessionStorage.setItem('login', user.refLogin);
+                                sessionStorage.setItem('id', user.id);
 
                                 console.log(sessionStorage.getItem('login'));
                                 location.replace("http://localhost:3000/test/test.html");
-                                
+
                         }
                         // else{
                         //     console.log('noooo');
@@ -78,7 +79,7 @@ export default class User {
 
                             console.log(sessionStorage.getItem('login'));
                             location.replace("http://localhost:3000/index.html");
-                            
+
                     }
                     // else{
                     //     console.log('noooo');
@@ -92,3 +93,5 @@ export default class User {
 
 }
 }
+
+

@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "mixins.scss",
+        "mixins/alert.scss",
+        "mixins/badge.scss",
+        "mixins/background-variant.scss",
+        "mixins/buttons.scss",
+        "mixins/forms.scss",
+        "mixins/icon.scss",
+        "mixins/modals.scss",
+        "mixins/popover.scss"
+    ],
+    "names": [],
+    "file": "mixins.css"
+}
