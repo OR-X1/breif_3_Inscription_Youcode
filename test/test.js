@@ -7,13 +7,41 @@ class Question {
     isCorrectAnswer(choice) {
       return this.answer === choice;
     }
+
+
   }
+
+
+
+/* export default  class Test {
+    constructor(text, answer) {
+      this.text = text;
+      this.answer = answer;
+    }
+
+    getAnswer(text, answer){
+
+      let test = {
+          "question": text, 
+          "answer": answer,
+          
+          }
+
+      fetch('http://localhost:5000/Users', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(test)
+   })
+
+  }
+
+  } */
   let questions = [
-    new Question("Quelle méthode Javascript permet de filtrer les éléments d'un tableau", ["indexOf()", "map()", "filter()", "reduce()"], "filter()"),
-    new Question("Quelle méthode Javascript permet de vérifier si un élément figure dans un tableau", ["isNaN()","includes()", "findIndex()", "isOdd()"], "findIndex()"),
-    new Question("Quelle méthode transforme du JSON en un objet Javascript ?", ["JSON.parse()","JSON.stringify()", "JSON.parse()", "JSON.toJS"], "JSON.parse()"),
-    new Question("Quel objet Javascript permet d'arrondir à l'entier le plus proche", ["Math.ceil()","Math.floor()", "Math.round()", "Math.random()"], "Math.round()"),
-    new Question("Quel objet Javascript permet d'arrondir à l'entier le plus proche", ["Math.ceil()","Math.floor()", "Math.round()", "Mm()"], "Math.round()"),
+    new Question("Question 1", ["choix1", "choix2", "choix3", "choix4"], "choix1"),
+    new Question("Question 2", ["choix1", "choix2", "choix3", "choix4"], "choix2"),
+    new Question("Question 3", ["choix1", "choix2", "choix3", "choix4"], "choix3"),
+    new Question("Question 4", ["choix1", "choix2", "choix3", "choix4"], "choix4"),
+    new Question("Question 5", ["choix1", "choix2", "choix3", "choix4"], "choix1")
   ];
   
   console.log(questions);
@@ -30,6 +58,7 @@ class Question {
     guess(answer) {
       if (this.getCurrentQuestion().isCorrectAnswer(answer)) {
         this.score++;
+        // return this.score;
       }
       this.currentQuestionIndex++;
     }
@@ -49,6 +78,8 @@ class Question {
         <h1>Quiz terminé !</h1>
         <h3> Votre score est de : ${quiz.score} / ${quiz.questions.length}</h3>`;
       this.elementShown("quiz", endQuizHTML);
+      sessionStorage.setItem('score',quiz.score);
+
 
       // next test --------
       if(quiz.score == quiz.questions.length){
@@ -98,7 +129,15 @@ class Question {
   // Create Quiz
   let quiz = new Quiz(questions);
   quizApp();
+  // sessionStorage.setItem('score',quiz.score);
+  console.log(sessionStorage.getItem('score'));
+
+
   
   console.log(quiz);
+
+  
+
+
   
   

@@ -49,9 +49,14 @@ export default class User {
                             console.log(user.refLogin);
                                 sessionStorage.setItem('login', user.refLogin);
                                 sessionStorage.setItem('id', user.id);
+                                sessionStorage.setItem('FirstName', user.FirstName);
+                                sessionStorage.setItem('LastName', user.LastName);
+                                sessionStorage.setItem('CIN', user.CIN);
+                                sessionStorage.setItem('email', user.email);
+
 
                                 console.log(sessionStorage.getItem('login'));
-                                location.replace("http://localhost:3000/test/test.html");
+                                location.replace("http://localhost:3000/test/test_online.html");
 
                         }
                         // else{

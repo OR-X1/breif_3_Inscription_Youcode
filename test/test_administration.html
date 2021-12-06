@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Argon Design System by Creative Tim
+    Youcode
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -84,8 +84,6 @@
 
   
 
-  
-<body>
 
 
   <section class="section section-shaped section-lg">
@@ -103,57 +101,45 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="card bg-secondary shadow border-0">
-            <div class="card-body px-lg-5 py-lg-5" id="quiz">
+            <div class="card-body px-lg-5 py-lg-5" >
               <!-- <form role="form"> -->
 
-                <div class="progress-wrapper pt-0">
-                    <div class="progress-info">
-                      <div class="progress-label">
-                        <h1 id="nameId"></h1>
-                        <h2 class="text-center">Test d’administration</h2>
-                      </div>
-                      <div class="progress-percentage">
-                        <span id="scoreNumber">0%</span>
-                      </div>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar bg-default" id="chartScor" role="progressbar"aria-valuemin="0" aria-valuemax="100" ></div>
-                    </div>
-                  </div>
+                <h2 class="text-center">Motivation</h2>
 
                    <!-- question -->
-                <div class="text-muted mb-4">
-                    <h3 id="question">Inside which HTML element do we put the JavaScript?</h3>
-                  </div>
+                
 
-                  <!-- score -->
-                  <h3 id="score"></h3>
-                  
-                  <div class="choices">
-                    <div class="row my-3 justify-content-center">
-                      <button id="guess0" class="btn btn-primary col-5 mx-2">        
-                        <p id="choice0" class="m-0"></p>
-                      </button>
-              
-                      <button id="guess1" class="btn btn-primary col-5 mx-2">
-                        <p id="choice1" class="m-0"></p>
-                      </button>
+                <form action="" id="administration">
+                    <div class="choices">
+                      <div class="text-muted mb-4">
+                        <h5 id="administration_quistion_1"></h5>
+                      </div>
+                        <div class="row my-3 justify-content-center">
+                            <textarea name="" id="administration_reponce_1" class="form-control" cols="30" rows="3"></textarea>
+                        </div>
                     </div>
-                      
-                    <div class="row my-3 justify-content-center">
-                      <button id="guess2" class="btn btn-primary col-5 mx-2">
-                        <p id="choice2" class="m-0"></p>
-                      </button>
-                        
-                      <button id="guess3" class="btn btn-primary col-5 mx-2">
-                        <p id="choice3" class="m-0"></p>
-                      </button>
+
+                    <div class="choices">
+                      <div class="text-muted mb-4">
+                        <h5 id="administration_quistion_2"></h5>
+                      </div>
+                        <div class="row my-3 justify-content-center">
+                            <textarea name="" id="administration_reponce_2" class="form-control" cols="30" rows="3"></textarea>
+                        </div>
                     </div>
-                  </div>
 
-                  <p id="progress"></p>
-
-
+                    <div class="choices">
+                      <div class="text-muted mb-4">
+                        <h5 id="administration_quistion_3"></h5>
+                      </div>
+                        <div class="row my-3 justify-content-center">
+                            <textarea name="" id="administration_reponce_3" class="form-control" cols="30" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <button type="submit" class="btn btn-dark mt-4">Submit</button>
+                      </div>
+                </form>
             </div>
           </div>
         </div>
@@ -161,7 +147,6 @@
     </div>
   </section>
    
-</body>
 
 
 
@@ -212,7 +197,8 @@
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 
-  <script src="./test_administration.js"></script>
+
+  <script src="test_administration.js"></script>
 
   <script>
 
