@@ -1,6 +1,6 @@
 # breif_3_Inscription_Youcode
 
-How to run this project
+# How to run this project
 ```
 Use this command to install the necessary dependencies
 
