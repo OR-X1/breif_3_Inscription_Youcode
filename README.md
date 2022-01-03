@@ -14,4 +14,6 @@ And this command to run projet
 
 4 . npm run json:server
 
+5 . lite-server
+
 ```
